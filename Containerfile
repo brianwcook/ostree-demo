@@ -17,7 +17,7 @@ RUN set -e; \
     --uninstall rpmfusion-free-release \
     --uninstall rpmfusion-nonfree-release; \
   rpm-ostree override remove mesa-va-drivers --install mesa-va-drivers-freeworld; \
-  sudo curl -o /etc/yum.repos.d/skype-stable.repo https://repo.skype.com/rpm/stable/skype-stable.repo; \
+  # sudo curl -o /etc/yum.repos.d/skype-stable.repo https://repo.skype.com/rpm/stable/skype-stable.repo; \
   rpm-ostree install \
     baobab \
     distrobox \
@@ -41,7 +41,7 @@ RUN set -e; \
     quiterss \
     radeontop \
     samba \
-    skypeforlinux \
+    # skypeforlinux \
     wireguard-tools \
     xrandr; \
   if [ "$SAVE_RPM_OSTREE_CACHE" == "false" ]; then \
