@@ -1,8 +1,6 @@
 # Build the final image
-FROM ghcr.io/cgwalters/fedora-silverblue:37
+FROM ghcr.io/cgwalters/fedora-silverblue:38
 
-# I used to build Hyprland here,
-# check commit history to see how
 
 # Define whether to save the `rpm-ostree`'s cache
 ARG SAVE_RPM_OSTREE_CACHE=false
