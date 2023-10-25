@@ -1,4 +1,4 @@
-This is very much a wip.  This demonstrates build an ostree image inside a container.
+This is very much a wip.  This demonstrates building an ostree image inside a container.
 
 First create the regauth file.  Be careful with the build container, it embeds your credentials [for now]. Keep it local.
 ```
